@@ -1,18 +1,23 @@
 package com.Alevel;
 
-public class Earth implements Planet {
+public class Earth extends Planet{
+    final static double gravityAcceleration = 9.81;
+    final static String[] mainLands = {"Eurasia", "Africa", "North America",
+            "South America", "Australia", "Antarctica"};
+    final static String satellite = "Moon";
+    final static String population = "~7.9 billions";
 
+    public Earth(){
+        super(gravityAcceleration);
+    }
     String getSatellite(){
-        return "Moon";
+        return satellite;
     }
     String getPopulation(){
-        return "~7.9 billions";
+        return population;
     }
     String[] getMainlands(){
-        return new String[]{"Eurasia", "Africa", "North America", "South America", "Australia", "Antarctica"};
+        return mainLands;
     }
-    @Override
-    public double getGravityAcceleration() {
-        return 9.81;
-    }
+
 }

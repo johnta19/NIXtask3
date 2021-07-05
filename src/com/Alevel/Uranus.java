@@ -1,10 +1,11 @@
 package com.Alevel;
 
-public class Uranus implements Planet {
+public class Uranus extends Planet {
 
-    @Override
-    public double getGravityAcceleration() {
-        return 8.86;
+    static final double gravityAcceleration = 8.86;
+
+    public Uranus(){
+        super(gravityAcceleration);
     }
 
 }

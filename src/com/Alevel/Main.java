@@ -22,6 +22,5 @@ public class Main {
         System.out.println("Population of Earth: " + earth.getPopulation());
         System.out.println("Satellite of Earth: " + earth.getSatellite());
         System.out.println("Mainlands of Earth: " + Arrays.toString(earth.getMainlands()));
-
     }
 }

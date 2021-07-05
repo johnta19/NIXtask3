@@ -11,7 +11,7 @@ enum WeekEnum {
     WeekEnum(DayTypes dayType) {
         this.dayType = dayType;
     }
-     DayTypes getDayType(){
+     DayTypes getDayType() {
         return dayType;
     }
 }

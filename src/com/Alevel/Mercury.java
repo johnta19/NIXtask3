@@ -1,8 +1,9 @@
 package com.Alevel;
 
-public class Mercury implements Planet {
-    @Override
-    public double getGravityAcceleration() {
-        return 3.72;
+public class Mercury extends Planet {
+
+    static final double gravityAcceleration = 3.72;
+    public Mercury(){
+        super(gravityAcceleration);
     }
 }

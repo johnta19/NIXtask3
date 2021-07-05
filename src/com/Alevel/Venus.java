@@ -1,8 +1,8 @@
 package com.Alevel;
 
-public class Venus implements Planet{
-    @Override
-    public double getGravityAcceleration() {
-        return 8.88;
+public class Venus extends Planet {
+    static final double gravityAcceleration = 8.88;
+    public Venus(){
+        super(gravityAcceleration);
     }
 }
